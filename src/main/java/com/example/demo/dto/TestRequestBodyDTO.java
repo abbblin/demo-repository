@@ -7,3 +7,4 @@ public class TestRequestBodyDTO {
 	private String message;
 	
 }
+ 
