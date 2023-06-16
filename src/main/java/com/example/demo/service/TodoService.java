@@ -1,6 +1,8 @@
 package com.example.demo.service;
+
 import org.springframework.stereotype.Service;
 import org.springframework.beans.factory.annotation.Autowired;
+
 import com.example.demo.model.TodoEntity;
 import com.example.demo.persistence.TodoRepository;
 
@@ -11,7 +13,7 @@ public class TodoService {
 	private TodoRepository repository;
 	public String testService(){
 	// Todo Entity 생성
-	TodoEntity entity = TodoEntity.builder().userID("user01").title("My first todo item").build();
+	TodoEntity entity = TodoEntity.builder().userID("Jin Woo Sun").title("My first todo item").build();
 	// Todo Entity 저장
 	repository.save(entity);
 	// Todo Entity 검색
